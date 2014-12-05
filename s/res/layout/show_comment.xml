@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/comment_cos_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <RelativeLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        
+	    <LinearLayout
+	        android:id="@+id/comment_linear"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentLeft="true"
+	        android:orientation="horizontal" >
+	
+	        <EditText
+	            android:id="@+id/write_comment"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="5dp"
+	            android:layout_weight="10"
+	            android:gravity="left" />
+	
+	        <Button
+	            android:id="@+id/add_comment"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="20"
+	            android:layout_gravity="center_vertical"
+	            android:text="我要评论" />
+	
+		</LinearLayout>
+	
+	    <ListView
+	        android:id="@+id/comment_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@id/comment_linear" >
+	
+	    </ListView>
+    </RelativeLayout>
+    
+
+</LinearLayout>
