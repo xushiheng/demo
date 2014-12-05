@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewUserDetail1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/addnewtitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewUserDetail2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewUserDetail1"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewUserDetail4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/textViewUserDetail3"
+        android:layout_below="@+id/textViewUserDetail3"
+        android:text="@string/telephone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewUserDetail3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewUserDetail2"
+        android:text="@string/mobilephone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewUserDetail5"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewUserDetail4"
+        android:text="@string/email"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextUserDetail4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUserDetail4"
+        android:layout_toRightOf="@+id/textViewUserDetail5"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="top"
+        android:inputType="none"
+        android:minLines="2" />
+
+    <EditText
+        android:id="@+id/editTextUserDetail3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewUserDetail5"
+        android:layout_alignLeft="@+id/editTextUserDetail1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/editTextUserDetail5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewUserDetail7"
+        android:layout_toRightOf="@+id/textViewUserDetail7"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="top"
+        android:inputType="none"
+        android:minLines="6" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewUserDetail7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editTextUserDetail4"
+        android:layout_toLeftOf="@+id/editTextUserDetail1"
+        android:text="@string/remarks"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDelete"
+        android:layout_alignBottom="@+id/buttonDelete"
+        android:layout_alignParentRight="true"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/buttonFix"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextUserDetail5"
+        android:layout_marginTop="28dp"
+        android:text="@string/fix" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonFix"
+        android:layout_alignBottom="@+id/buttonFix"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delete" />
+
+    <EditText
+        android:id="@+id/editTextUserDetail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUserDetail2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewUserDetail2"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/editTextUserDetail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewUserDetail3"
+        android:layout_toRightOf="@+id/textViewUserDetail3"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="none" />
+
+</RelativeLayout>

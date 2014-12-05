@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contact</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="searchhint">请输入联系人姓名</string>
+    <string name="search">查询</string>
+    <string name="desc">查询</string>
+    <string name="name">姓名：</string>
+    <string name="namehint">请输入联系人姓名</string>
+    <string name="mobilephone">手机号：</string>
+    <string name="mobilehonehint">请输入手机号</string>
+    <string name="telephone">电话：</string>
+    <string name="telephonehint">请输入电话号码</string>
+    <string name="email">电子邮件：</string>
+    <string name="emailhint">请输入邮箱地址</string>
+    <string name="remarks">备注：</string>
+    <string name="addnewtitle">联系人信息</string>
+    <string name="save">保存</string>
+    <string name="back">返回</string>
+    <string name="delete">删除</string>
+    <string name="fix">修改</string>
+    <string name="group">我的群组：</string>
+    <string name="addgroup">增加群组</string>
+    <string name="groupname">群组1</string>
+    <string name="adduser">增加联系人</string>
+
+</resources>
