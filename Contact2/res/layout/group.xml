@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/textViewGroup" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonAddGroup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/listViewGroup"
+        android:text="@string/addgroup" />
+
+    <Button
+        android:id="@+id/buttonBackGroup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAddGroup"
+        android:layout_alignBottom="@+id/buttonAddGroup"
+        android:layout_alignParentRight="true"
+        android:text="@string/back" />
+
+</RelativeLayout>
