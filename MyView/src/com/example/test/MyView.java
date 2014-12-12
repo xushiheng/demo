@@ -12,25 +12,24 @@ import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 public class MyView extends View {
 	float radius;// 圆的半径
-	float borderwidth;// 边界宽度
-	int bordercolor;// 边界颜色
+	private float borderwidth;// 边界宽度
+	private int bordercolor;// 边界颜色
 	float polygondistance;// 多边形顶点到中心的距离
-	int polygonsides;// 多边形边数
-	int type;// 图形种类，0为圆，1为多边形
+	private int polygonsides;// 多边形边数
+	private int type;// 图形种类，0为圆，1为多边形
 	private static final int TYPE_CIRCLE = 0;
 	private static final int TYPE_POLYGON = 1;
-	int mWidth;
-	int mHeight;
-	Paint paint;
-	Bitmap mSrc;
+	private int mWidth;
+	private int mHeight;
+	private Paint paint;
+	private Bitmap mSrc;
 
 	public MyView(Context context, AttributeSet attrs) {
-		this(context, null, 0);
+		this(context, attrs, 0);
 	}
 
 	public MyView(Context context) {
@@ -45,12 +44,9 @@ public class MyView extends View {
 		borderwidth = a.getDimension(R.styleable.MyView_borderwidth, 10);
 		polygondistance = a
 				.getDimension(R.styleable.MyView_polygondistance, 50);
-		polygonsides = a.getInteger(R.styleable.MyView_polygonsides, 6);
+		polygonsides = a.getInteger(R.styleable.MyView_polygonsides, 3);
 		bordercolor = a.getColor(R.styleable.MyView_bordercolor, Color.RED);
-		type = a.getInt(R.styleable.MyView_type, 1);// 默认是圆形
-		Log.e("半径", radius + " ");
-		Log.e("形状", type + " ");
-		Log.e("边界宽度",borderwidth + " ");
+		type = a.getInt(R.styleable.MyView_type, 0);// 默认是圆形
 		a.recycle();
 		mSrc = BitmapFactory.decodeResource(getResources(), R.drawable.hz);
 	}

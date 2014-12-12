@@ -6,6 +6,6 @@
 
 
 	<com.example.test.MyView  android:layout_height="fill_parent" android:layout_width="fill_parent"
-	    app:radius="100dp" app:type="polygon"/>"
+	     app:type="polygon" app:polygonsides="5" app:borderwidth="30px"/>
 
 </RelativeLayout>
