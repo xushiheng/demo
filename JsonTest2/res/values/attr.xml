@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="radius" format="dimension"></attr>
+    <attr name="borderwidth" format="dimension"></attr>
+    <attr name="bordercolor" format="color"></attr>
+    <attr name="polygondistance" format="dimension"></attr>
+    <attr name="polygonsides" format="integer"></attr>
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="polygon" value="1" />
+    </attr>
+
+    <declare-styleable name="MyView">
+        <attr name="radius"></attr>
+        <attr name="borderwidth"></attr>
+        <attr name="bordercolor"></attr>
+    </declare-styleable>
+
+</resources>
